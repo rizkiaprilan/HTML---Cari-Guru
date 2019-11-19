@@ -1,0 +1,153 @@
+.rating>img{
+    width:27px;
+    height:27px;
+}
+
+.rating>img:hover{
+    cursor: pointer;
+}
+
+#powithvLogo{
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#powithvLogo>img{
+    width: 768px;
+    height: 432px;
+}
+
+.testimonial{
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.inputBox{
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(163, 163, 163);
+}
+
+.testimonial>form>div{
+    margin-bottom: 25px;
+}
+
+.testimonial textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border-radius: 2px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.inputBox{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+;
+}
+
+
+.testimonial>form{
+    width:625px;
+}
+
+
+.bigText{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#checkBox{
+    font-family: 'helvetica';
+    font-style: oblique;
+    margin-bottom: 10px;
+    color: rgb(255, 55, 55);
+    animation-name: chckHighlight;
+    animation-duration: 0.3s;
+    animation-play-state: paused;
+}
+
+.testimonial input[type="submit"]{
+    padding: 12px 35px 12px 35px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(163, 163, 163);
+    text-decoration: none;
+    font-family: 'helvetica' ;
+    font-size: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s ease-in-out;
+}
+
+.testimonial input[type="submit"]:hover{
+    cursor: pointer;
+    color:white;
+    background-color: rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
+}
+
+.testimonial input[type="submit"]:focus{
+    outline: 0;
+}
+
+.errMsg{
+    position: relative;
+    display: none;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    background-color: rgb(255, 55, 55);
+    font-family: 'helvetica' ;
+    font-size: 12px;
+    color: white;
+    animation-name: fadein;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadein{
+    from{
+        right: 12px;
+        opacity: 0;
+    }
+
+    to{
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes chckHighlight{
+    from{
+        color: black;
+    }
+    to{
+        color: rgb(255, 55, 55);
+    }
+}
+
+
+/* Font by google */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(Fonts/MonsterRat.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+

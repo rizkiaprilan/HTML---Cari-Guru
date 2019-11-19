@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/Testimonial.css">
+    <title>Testimonial</title>
+</head>
+<body>
+
+    <div class="navBar">
+        <ul>
+            <img id="menu" onclick="menuClick()" src="Images/menu.png" alt="menu_icon" width="30px" height="30px">
+            <li>
+                <a class="linkNav" ID="home" href="Home.html">Home</a>
+            </li>
+            <li>
+                <a class="linkNav" ID="about" href="About.html">About</a>
+            </li>
+            <li class="category" id="course">
+                <p>Products</p>
+                <ul>
+                    <li>
+                        <a class="categoryNav" href="Food.html" ID="food">Food</a>
+                    </li>
+                    <li>
+                        <a class="categoryNav" href="Medicine.html" ID="medicine">Medicine</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="linkNav" ID="orderPage" href="Order.html">Order</a>
+            </li>
+
+            <li>
+                <a class="linkNav" ID="testimony" href="Testimonial.html">Testimonial</a>
+            </li>
+
+            <span class="menuRight">
+                <img class="linkNav" src="Images/cart_icon.png" width="25px" height="25px" alt="">
+                <img class="linkNav" src="Images/search_icon.png" width="25px" height="25px" alt="">
+            <span>
+        </ul>
+    </div>
+    <div class="verticalNavBar" id="verticalNavBar">
+        <ul>
+            <li>
+                <a class="linkNavVer" ID="homeVer" href="Home.html">Home</a>
+            </li>
+            <li>
+                <a class="linkNavVer" ID="aboutVer" href="About.html">About</a>
+            </li>
+            <li class="categoryVer">
+                <p>Products</p>
+                <ul>
+                    <li>
+                        <a class="categoryNavVer" href="Food.html" ID="food">Food</a>
+                    </li>
+                    <li>
+                        <a class="categoryNavVer" href="Medicine.html" ID="medicine">Medicine</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="linkNavVer" ID="orderPageVer" href="Order.html">Order</a>
+            </li>
+
+            <li>
+                <a class="linkNavVer" ID="testimonyVer" href="Testimonial.html">Testimonial</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="slideshow fade">
+        <img src="Images/POwithV.png"  alt="POwithV" width="100%px" height="80%"> 
+    </div>
+
+    <div class="testimonial">
+        <form action="Home.html" method="POST" onsubmit="return validate()">
+            <div>
+                <div class="bigText">
+                    <label class="bigText">Name</label>
+                </div>
+                <div class="errMsg" id="msgName">
+                </div>
+                <div>
+                    <input spellcheck="false" type="text" name="name" id="name" class="inputBox">
+                </div> 
+            </div>
+            <div>
+                <div class="bigText">
+                    <label class="bigText">Email</label> 
+                </div>
+                <div class="errMsg" id="msgEmail">
+                </div>
+                <div>
+                    <input spellcheck="false" type="text" name="email" id="email" class="inputBox">
+                </div>
+            </div>
+            <div>
+                <div class="bigText">
+                    <label class="bigText">Rating</label> 
+                </div>
+                <div class="errMsg" id="msgRating">
+                </div>
+                <div>
+                    <span class="rating"><img onmouseover="star1Hover()" onclick="star1Click()" onmouseout="starMouseLeave()" id="star1" src="Images/rating.png"></span>
+                    <span class="rating"><img onmouseover="star2Hover()" onclick="star2Click()" onmouseout="starMouseLeave()" id="star2" src="Images/rating.png"></span>
+                    <span class="rating"><img onmouseover="star3Hover()" onclick="star3Click()" onmouseout="starMouseLeave()" id="star3" src="Images/rating.png"></span>
+                    <span class="rating"><img onmouseover="star4Hover()" onclick="star4Click()" onmouseout="starMouseLeave()" id="star4" src="Images/rating.png"></span>
+                    <span class="rating"><img onmouseover="star5Hover()" onclick="star5Click()" onmouseout="starMouseLeave()" id="star5" src="Images/rating.png"></span>
+                </div>       
+            </div>
+            <div>
+                <div class="bigText">
+                    <label >Comment</label> 
+                </div>
+                <div class="errMsg" id="msgComment">
+                </div>
+                <div>
+                    <textarea spellcheck="false" name="comment" id="comment"></textarea>
+                </div>
+            </div>
+            <div id="checkBox">
+                <input type="checkbox" name="publishConf" id="publishConf"> 
+                <label id="checkBoxTxt">I agree to publish this testimonial</label> 
+            </div>
+            <div>
+                <input type="submit" value="Publish">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="bottom">
+    
+            <ul class="ulclass">
+    
+                <li>
+                    <div class="textbottom">
+                        <ul>
+                            <li><b>MAY WE HELP YOU?</b> <br><br></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Product Core</a></li>
+                        </ul>
+                    </div>
+                </li>
+    
+    
+                <li>
+                    <div class="textbottom">
+                        <ul>
+                            <li><b>PARTNERS</b> <br><br></li>
+                            <li><a href="#">Reseller</a></li>
+                            <li><a href="#">Official Outlet</a></li>
+                        </ul>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="textbottom">
+                        <ul>
+                            <li><b>COPYRIGHT</b> <br><br></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="textbottom">
+                        <ul>
+                            <li><b>FIND US ON</b> <br><br></li>
+                            <li><a href="#"><img src="Images/facebook.png" alt="facebook.icon" width="20px" heigth="25px">
+                                    Facebook</a></li>
+                            <li><a href="#"><img src="Images/instagram.png" alt="images.icon" width="20px" heigth="25px">
+                                    Instagram</a></li>
+                            <li><a href="#"><img src="Images/twitter5.png" alt="twitter.icon" width="20px" heigth="25px">
+                                    Twitter</a></li>
+                            <li><a href="#"><img src="Images/youtube5.png" alt="youtube.icon" width="20px" heigth="25px">
+                                    Youtube</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="textbottom">
+                        <ul>
+                            <li><img class="logo" src="images/POwithV.png" alt="" width="250px" height="250px" style="margin-left:200px"></li>
+                        </ul>
+                    </div>
+                </li>
+    
+            </ul>
+    
+        </div>
+    </footer>
+
+    <script src="javascript/function.js"></script>
+    <script src="javascript/testimonial.js"></script>
+</body>
+</html>
